@@ -1,0 +1,25 @@
+.logo{
+  font-size: 25px;
+  font-family: sans-serif;
+  text-shadow:  7px 3px 5px #757575;
+}
+
+.tagline, h3 {
+  text-align: center;
+  margin-top: 30
+}
+
+nav {
+  float: right;
+  margin-top: -45px;
+}
+
+nav a {
+  margin: -66px;
+  margin-top: -27px;
+}
+
+textarea {
+  height: 200px;
+  width: 240px;
+}
