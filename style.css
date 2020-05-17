@@ -15,11 +15,15 @@ nav {
 }
 
 nav a {
-  margin: -66px;
-  margin-top: -27px;
+  margin: 9px;
+  /* margin-top: -27px; */
 }
 
 textarea {
   height: 200px;
-  width: 240px;
+  width: 600px;
+}
+
+#text-area{
+  text-align: center;
 }
