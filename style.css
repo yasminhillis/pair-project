@@ -4,9 +4,11 @@ body {
 }
 
 .logo {
+  color: rgb(96, 96, 159);
   font-size: 34px;
-  font-family: sans-serif;
-  font-weight: 400;
+  font-family: sans-serif ;
+  /*font: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-weight: 600;
   text-transform: uppercase;
   text-shadow: 16px 8px 11px;
   border-bottom: 3px solid #ccc;
@@ -45,6 +47,8 @@ textarea {
 body {
   /* color: #888; */
   font: 400 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url(gettyimages-160295454-640x640.jpg);
+ 
 }
 
  #exc {
@@ -79,7 +83,7 @@ body {
 
 .middle {
   text-align: center;
-  font-size: 29px;
+  font-size: 32px;
   margin-top: 93px;
   color: rgba(108, 52, 131);
 
@@ -105,5 +109,17 @@ body {
 
  label {
     color: rgba(108, 52, 131);
+    font-size: 20px
+ }
+
+ #about{
+  border: 3px dashed grey;
+  max-width: 600px;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  margin: auto;
+  margin-top: 205px;
+  font-weight: bold;
+  font-size: 32px;
  }
 
