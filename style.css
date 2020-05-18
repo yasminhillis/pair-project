@@ -1,14 +1,19 @@
 body {
   background-color: rgba(215, 189, 226, 0.3);
+
 }
 
 .logo {
-    font-size: 34px;
-    font-family: sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-shadow: 16px 8px 11px;
+  font-size: 34px;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 16px 8px 11px;
+  border-bottom: 3px solid #ccc;
+  line-height: 1.4;
+  /* margin-top: -73px; */
 }
+
 
 /*
  */
@@ -20,7 +25,7 @@ body {
 
 nav {
   float: right;
-  margin-top: -45px;
+  margin-top: -62px;
 }
 
 nav a {
@@ -76,6 +81,8 @@ body {
   text-align: center;
   font-size: 29px;
   margin-top: 93px;
+  color: rgba(108, 52, 131);
+
 }
 
 .btn {
@@ -94,3 +101,9 @@ body {
  #btn {
    text-align: center;
  }
+
+
+ label {
+    color: rgba(108, 52, 131);
+ }
+
