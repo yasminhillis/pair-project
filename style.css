@@ -1,7 +1,13 @@
-.logo{
-  font-size: 25px;
-  font-family: sans-serif;
-  /* text-shadow:  7px 3px 5px #757575; */
+body {
+  background-color: rgba(215, 189, 226, 0.3);
+}
+
+.logo {
+    font-size: 34px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 16px 8px 11px;
 }
 
 /*
@@ -65,3 +71,26 @@ body {
 .btn {
   width: 15px;
 }
+
+.middle {
+  text-align: center;
+  font-size: 29px;
+  margin-top: 93px;
+}
+
+.btn {
+  margin: 0
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.btn-alt {
+   border: 1px solid #dfe2e5;
+   padding: 10px 30px;
+ }
+
+ #btn {
+   text-align: center;
+ }

@@ -1,9 +1,43 @@
-$('select').change(function() {
-	if( $( "select option:selected" ).text() === 'excellent' ){
-		alert('Good to know!!')
-	}
+var random = function(array){
+  var randomIndex = Math.floor(Math.random() * array.length)
+  return array[randomIndex]
+}
 
+var x = ['In the middle of winter I at last discovered that there was in me an invincible summer', 'Great things never come from comfort zones', 'The harder you work for something, the greater you\'ll feel when you achieve it', "Don’t Let Yesterday Take Up Too Much Of Today"]
+
+$('select').change(function(){
+
+	$('select option:selected')
+	var div = $('<div id="qoute"></div>')
+	div.text(random(x))
+	$('#text-area').append(div)
+	div.css('z-index', '2')
+	div.css('cursor', 'pointer')
+	div.css('width', '100%')
+	div.css('height', '100%')
+	div.css('position', 'fixed')
+	div.css('background-color', 'rgba(0,0,0,0.5)')
+	div.css('top', '0')
+	div.css('left', '0')
+	div.css('bottom', '0')
+	div.css('right', '0')
+	div.css('padding-top', '269px')
+	div.css('color', '#fff')
+	div.css('font-size', '31px')
+	div.click(off)
 })
+
+function off(){
+  $("#qoute").remove();
+}
+
+
+// $('select').change(function() {
+	// if( $( "select option:selected" ).text() === 'excellent' ){
+		// alert(random(x))
+	// }
+
+// })
 
 var content = $('textarea').val()
 
