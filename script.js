@@ -3,7 +3,7 @@ var random = function(array){
   return array[randomIndex]
 }
 
-var x = ['In the middle of winter I at last discovered that there was in me an invincible summer', 'Great things never come from comfort zones', 'The harder you work for something, the greater you\'ll feel when you achieve it', "Don’t Let Yesterday Take Up Too Much Of Today"]
+var x = ['"In the middle of winter I at last discovered that there was in me an invincible summer"', '"Great things never come from comfort zones"', '"The harder you work for something, the greater you\'ll feel when you achieve it"', '"Don’t Let Yesterday Take Up Too Much Of Today"']
 
 $('select').change(function(){
 
@@ -21,7 +21,7 @@ $('select').change(function(){
 	div.css('left', '0')
 	div.css('bottom', '0')
 	div.css('right', '0')
-	div.css('padding-top', '269px')
+	div.css('padding-top', '349px')
 	div.css('color', '#fff')
 	div.css('font-size', '31px')
 	div.click(off)
@@ -42,9 +42,9 @@ function off(){
 var content = $('textarea').val()
 
 $('button').click(function(){
-	console.log('hi')
 
-	if( $( "select option:selected" ).text() === 'excellent' ){
+ 
+	if( $( "select option:selected" ).text() === 'excellent' && $('textarea').val() != "      "){
 
 	var div = $('<div></di>');
 	div.css('border', '2px solid #ccc')
@@ -57,7 +57,7 @@ $('button').click(function(){
 	$('#exc').append(div);
 	$('textarea').val(' ')
 
-} else if ($( "select option:selected" ).text() === 'good' ) {
+} else if ($( "select option:selected" ).text() === 'good' && $('textarea').val() != "      " ) {
 	var div = $('<div></di>');
 	div.css('border', '2px solid #ccc')
 	div.css('padding', '7px 7px 7px 7px')
@@ -69,7 +69,8 @@ $('button').click(function(){
 
 	$('#gd').append(div);
 	$('textarea').val(' ')
-} else if ($( "select option:selected" ).text() === 'down' ) {
+
+} else if ($( "select option:selected" ).text() === 'down' && $('textarea').val() != "      " ) {
 	var div = $('<div id=""></di>');
 	div.css('border', '2px solid #ccc')
 	div.css('padding', '7px 7px 7px 7px')
@@ -79,7 +80,8 @@ $('button').click(function(){
 
 	$('#dn').append(div);
 	$('textarea').val(' ')
-} else if($('textarea').val() === ''){
-	alert('you should type something to be posted')
-}
+
+} else if($('textarea').val() == "      "){
+ 	alert('you should type something to be posted')
+ }
 })
